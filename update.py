@@ -8,7 +8,7 @@ from distutils.dir_util import copy_tree
 # get local version
 with open('bot.py', 'r') as file:
     text = file.read()
-local_version = re.findall("VERSION = '(.*?)'", text)
+local_version = re.findall('VERSION = "(.*?)"', text)
 local_version = 'v' + local_version[0]
 print(f'Local version:\n{local_version}')
 
